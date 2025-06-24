@@ -36,13 +36,12 @@ This project is the frontend of a full-featured Instagram clone built with Angul
 - Reply to comments
 - Delete own comments
 - Like comments
-- Report inappropriate comments
 
 ### 📰 Feed & Explore
 
 - Feed with posts from followed users
 - Explore tab with popular content and hashtags
-- Search by users, hashtags, or locations
+- Search by users, hashtags
 
 ### 📥 Direct Messaging
 
@@ -54,7 +53,6 @@ This project is the frontend of a full-featured Instagram clone built with Angul
 
 - Real-time notifications (new followers, likes, messages)
 - Mark as read
-- Notification preferences
 
 ### ⚙️ Account Settings
 
