@@ -8,6 +8,7 @@
   "trailingComma": "all",
   "bracketSameLine": true,
   "printWidth": 80,
+  "endOfLine": "auto",
   "overrides": [
     {
       "files": "*.html",
