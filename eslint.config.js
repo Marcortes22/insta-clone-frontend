@@ -35,6 +35,7 @@ module.exports = tseslint.config(
         },
       ],
     },
+    ignores: ['eslint.config.js', 'node_modules', 'dist'],
   },
   {
     files: ['**/*.html'],
