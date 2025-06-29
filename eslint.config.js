@@ -34,6 +34,8 @@ module.exports = tseslint.config(
           argsIgnorePattern: '^_',
         },
       ],
+      'no-console': ['error', { allow: ['warn', 'error'] }],
+      'no-debugger': 'error',
     },
     ignores: ['eslint.config.js', 'node_modules', 'dist'],
   },
