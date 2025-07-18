@@ -13,7 +13,8 @@
     "format:check": "prettier --check \"src/**/*.{ts,html,scss,css}\"",
     "lint-staged": "lint-staged",
     "prepare": "husky",
-    "commit": "cz"
+    "commit": "cz",
+    "serve:ssr:insta-clone-frontend": "node dist/insta-clone-frontend/server/server.mjs"
   },
   "lint-staged": {
     "*.{ts,js,html}": [
@@ -40,10 +41,13 @@
     "@angular/material": "20.0.4",
     "@angular/platform-browser": "^20.0.5",
     "@angular/platform-browser-dynamic": "^20.0.5",
+    "@angular/platform-server": "^20.0.5",
     "@angular/router": "^20.0.5",
+    "@angular/ssr": "^20.1.0",
     "@apollo/client": "^3.13.8",
     "@tailwindcss/postcss": "^4.1.11",
     "apollo-angular": "11.0.0",
+    "express": "^5.1.0",
     "graphql": "^16",
     "lint-staged": "^16.1.2",
     "postcss": "^8.5.6",
@@ -60,7 +64,11 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.30.0",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.8",
+    "@types/node": "^20.17.19",
     "angular-eslint": "20.1.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.30.0",
@@ -77,6 +85,7 @@
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "prettier-eslint": "^16.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
     "typescript": "~5.8.3",
     "typescript-eslint": "8.35.1"
   }

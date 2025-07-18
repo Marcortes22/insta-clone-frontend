@@ -9,6 +9,7 @@
   "bracketSameLine": true,
   "printWidth": 80,
   "endOfLine": "auto",
+  "plugins": ["prettier-plugin-tailwindcss"],
   "overrides": [
     {
       "files": "*.html",

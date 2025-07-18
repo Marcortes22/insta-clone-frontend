@@ -11,6 +11,11 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideApollo } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 import { InMemoryCache } from '@apollo/client/core';
+import {
+  provideClientHydration,
+  withEventReplay,
+} from '@angular/platform-browser';
+import { deviceDetectionProvider } from './core/constants/device-type.provider';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -28,5 +33,7 @@ export const appConfig: ApplicationConfig = {
         cache: new InMemoryCache(),
       };
     }),
+    provideClientHydration(withEventReplay()),
+    deviceDetectionProvider,
   ],
 };
