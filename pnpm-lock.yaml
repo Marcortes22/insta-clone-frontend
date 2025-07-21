@@ -25,9 +25,6 @@ importers:
       '@angular/forms':
         specifier: ^20.0.5
         version: 20.1.0(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@20.1.0(@angular/animations@20.1.0(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
-      '@angular/material':
-        specifier: 20.0.4
-        version: 20.0.4(10af821b3fb0fa24674010904f88a146)
       '@angular/platform-browser':
         specifier: ^20.0.5
         version: 20.1.0(@angular/animations@20.1.0(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))
@@ -98,12 +95,6 @@ importers:
       '@eslint/js':
         specifier: ^9.30.0
         version: 9.31.0
-      '@tailwindcss/forms':
-        specifier: ^0.5.10
-        version: 0.5.10(tailwindcss@4.1.11)
-      '@tailwindcss/typography':
-        specifier: ^0.5.16
-        version: 0.5.16(tailwindcss@4.1.11)
       '@types/express':
         specifier: ^5.0.1
         version: 5.0.3
@@ -430,19 +421,6 @@ packages:
       '@angular/common': 20.1.0
       '@angular/core': 20.1.0
       '@angular/platform-browser': 20.1.0
-      rxjs: ^6.5.3 || ^7.4.0
-
-  '@angular/material@20.0.4':
-    resolution:
-      {
-        integrity: sha512-ET+znnyOVjBezHsjy7U42/88JPl9Mhumvf01gMBN8mNcaoSpeM4cc2uKBg30/3YzykKIsjXtvUJj/PaTujmJAQ==,
-      }
-    peerDependencies:
-      '@angular/cdk': 20.0.4
-      '@angular/common': ^20.0.0 || ^21.0.0
-      '@angular/core': ^20.0.0 || ^21.0.0
-      '@angular/forms': ^20.0.0 || ^21.0.0
-      '@angular/platform-browser': ^20.0.0 || ^21.0.0
       rxjs: ^6.5.3 || ^7.4.0
 
   '@angular/platform-browser-dynamic@20.1.0':
@@ -2099,14 +2077,6 @@ packages:
         integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==,
       }
 
-  '@tailwindcss/forms@0.5.10':
-    resolution:
-      {
-        integrity: sha512-utI1ONF6uf/pPNO68kmN1b8rEwNXv3czukalo8VtJH8ksIkZXr3Q3VYudZLkCsDd4Wku120uF02hYK25XGPorw==,
-      }
-    peerDependencies:
-      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || >= 4.0.0-alpha.20 || >= 4.0.0-beta.1'
-
   '@tailwindcss/node@4.1.11':
     resolution:
       {
@@ -2239,14 +2209,6 @@ packages:
       {
         integrity: sha512-q/EAIIpF6WpLhKEuQSEVMZNMIY8KhWoAemZ9eylNAih9jxMGAYPPWBn3I9QL/2jZ+e7OEz/tZkX5HwbBR4HohA==,
       }
-
-  '@tailwindcss/typography@0.5.16':
-    resolution:
-      {
-        integrity: sha512-0wDLwCVF5V3x3b1SGXPCDcdsbDHMBe+lkFzBRaHeLvNi+nrrnZ1lA18u+OTWO8iSWU2GxUOCvlXtDuqftc1oiA==,
-      }
-    peerDependencies:
-      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20 || >=4.0.0-beta.1'
 
   '@tufjs/canonical-json@2.0.0':
     resolution:
@@ -3279,14 +3241,6 @@ packages:
         integrity: sha512-u/O3vwbptzhMs3L1fQE82ZSLHQQfto5gyZzwteVIEyeaY5Fc7R4dapF/BvRoSYFeqfBk4m0V1Vafq5Pjv25wvA==,
       }
     engines: { node: '>= 6' }
-
-  cssesc@3.0.0:
-    resolution:
-      {
-        integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==,
-      }
-    engines: { node: '>=4' }
-    hasBin: true
 
   custom-event@1.0.1:
     resolution:
@@ -5028,12 +4982,6 @@ packages:
         integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==,
       }
 
-  lodash.castarray@4.4.0:
-    resolution:
-      {
-        integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==,
-      }
-
   lodash.isplainobject@4.0.6:
     resolution:
       {
@@ -5285,13 +5233,6 @@ packages:
         integrity: sha512-VP79XUPxV2CigYP3jWwAUFSku2aKqBH7uTAapFWCBqutsbmDo96KY5o8uh6U+/YSIn5OxJnXp73beVkpqMIGhA==,
       }
     engines: { node: '>=18' }
-
-  mini-svg-data-uri@1.4.4:
-    resolution:
-      {
-        integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==,
-      }
-    hasBin: true
 
   minimatch@3.1.2:
     resolution:
@@ -5893,13 +5834,6 @@ packages:
       {
         integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==,
       }
-
-  postcss-selector-parser@6.0.10:
-    resolution:
-      {
-        integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==,
-      }
-    engines: { node: '>=4' }
 
   postcss@8.5.6:
     resolution:
@@ -7499,16 +7433,6 @@ snapshots:
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@angular/material@20.0.4(10af821b3fb0fa24674010904f88a146)':
-    dependencies:
-      '@angular/cdk': 20.0.4(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
-      '@angular/common': 20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
-      '@angular/core': 20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)
-      '@angular/forms': 20.1.0(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@20.1.0(@angular/animations@20.1.0(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
-      '@angular/platform-browser': 20.1.0(@angular/animations@20.1.0(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))
-      rxjs: 7.8.2
-      tslib: 2.8.1
-
   '@angular/platform-browser-dynamic@20.1.0(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/compiler@20.1.0)(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@20.1.0(@angular/animations@20.1.0(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1)))':
     dependencies:
       '@angular/common': 20.1.0(@angular/core@20.1.0(@angular/compiler@20.1.0)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
@@ -8510,11 +8434,6 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.2': {}
 
-  '@tailwindcss/forms@0.5.10(tailwindcss@4.1.11)':
-    dependencies:
-      mini-svg-data-uri: 1.4.4
-      tailwindcss: 4.1.11
-
   '@tailwindcss/node@4.1.11':
     dependencies:
       '@ampproject/remapping': 2.3.0
@@ -8585,14 +8504,6 @@ snapshots:
       '@tailwindcss/node': 4.1.11
       '@tailwindcss/oxide': 4.1.11
       postcss: 8.5.6
-      tailwindcss: 4.1.11
-
-  '@tailwindcss/typography@0.5.16(tailwindcss@4.1.11)':
-    dependencies:
-      lodash.castarray: 4.4.0
-      lodash.isplainobject: 4.0.6
-      lodash.merge: 4.6.2
-      postcss-selector-parser: 6.0.10
       tailwindcss: 4.1.11
 
   '@tufjs/canonical-json@2.0.0': {}
@@ -9304,8 +9215,6 @@ snapshots:
       nth-check: 2.1.1
 
   css-what@6.2.2: {}
-
-  cssesc@3.0.0: {}
 
   custom-event@1.0.1: {}
 
@@ -10429,8 +10338,6 @@ snapshots:
 
   lodash.camelcase@4.3.0: {}
 
-  lodash.castarray@4.4.0: {}
-
   lodash.isplainobject@4.0.6: {}
 
   lodash.kebabcase@4.1.1: {}
@@ -10558,8 +10465,6 @@ snapshots:
   mimic-fn@2.1.0: {}
 
   mimic-function@5.0.1: {}
-
-  mini-svg-data-uri@1.4.4: {}
 
   minimatch@3.1.2:
     dependencies:
@@ -10918,11 +10823,6 @@ snapshots:
   pkce-challenge@5.0.0: {}
 
   postcss-media-query-parser@0.2.3: {}
-
-  postcss-selector-parser@6.0.10:
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
 
   postcss@8.5.6:
     dependencies:

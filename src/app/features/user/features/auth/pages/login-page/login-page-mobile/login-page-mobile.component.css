@@ -1,0 +1,17 @@
+.mask-eye {
+  mask-image: var(--mask-eye);
+  -webkit-mask-image: var(--mask-eye);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.mask-hidden {
+  mask-image: var(--mask-hidden);
+  -webkit-mask-image: var(--mask-hidden);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}

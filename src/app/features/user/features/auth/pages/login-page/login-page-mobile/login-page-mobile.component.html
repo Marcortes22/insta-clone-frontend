@@ -1,0 +1,69 @@
+<div
+  class="flex h-dvh flex-col items-center gap-10 overflow-y-scroll px-2 pt-3 pb-10">
+  <header class="flex min-h-[127px] w-full flex-1 flex-col items-center gap-5">
+    <div class="flex-0">English (US)</div>
+
+    <div class="flex w-full flex-1 items-center justify-center">
+      <img
+        src="assets/logos/Instagram_Gradient.svg"
+        alt="Instagram logo"
+        class="h-[60px]" />
+    </div>
+  </header>
+
+  <main class="w-full flex-1">
+    <form class="flex w-full flex-col justify-center gap-3">
+      <label for="Email" class="relative w-full">
+        <input
+          type="email"
+          id="Email"
+          placeholder=" "
+          class="peer auth-mobile-input" />
+
+        <span
+          class="absolute start-4 top-5 -translate-y-3 bg-transparent px-0.5 text-sm font-medium text-[#94a5b6] transition-transform peer-placeholder-shown:translate-y-0 peer-placeholder-shown:text-base peer-focus:-translate-y-3 peer-focus:text-sm">
+          Username, email or mobile number
+        </span>
+      </label>
+
+      <label for="Password" class="relative w-full">
+        <input
+          [type]="showPassword() ? 'text' : 'password'"
+          id="Password"
+          placeholder=" "
+          class="peer auth-mobile-input" />
+
+        <span
+          class="absolute start-4 top-5 -translate-y-3 bg-transparent px-0.5 text-sm font-medium text-[#94a5b6] transition-transform peer-placeholder-shown:translate-y-0 peer-placeholder-shown:text-base peer-focus:-translate-y-3 peer-focus:text-sm">
+          Password
+        </span>
+
+        <button
+          type="button"
+          class="absolute top-1/2 right-3 -translate-y-1/2"
+          (click)="togglePasswordVisibility()">
+          <div
+            [class.mask-eye]="showPassword()"
+            [class.mask-hidden]="!showPassword()"
+            class="h-6 w-6 bg-white"></div>
+        </button>
+      </label>
+
+      <button class="h-[44px] w-full rounded-3xl bg-[#0064E0]" type="submit">
+        Log in
+      </button>
+      <button class="h-auto font-normal" type="button">Forgot password?</button>
+    </form>
+  </main>
+  <footer class="flex w-full flex-1 flex-col items-center justify-end gap-4">
+    <button
+      (click)="navigateToRegister()"
+      class="h-[44px] w-full rounded-3xl border bg-transparent text-[#55A6EF]">
+      Create new account
+    </button>
+    <img
+      class="h-[12px] w-[60px] opacity-[0.9]"
+      src="assets/icons/meta.png"
+      alt="meta logo" />
+  </footer>
+</div>

@@ -1,7 +1,5 @@
 .phone-background {
-  background-image:
-    linear-gradient(130deg, #2d3736 0%, #282e3e 20%, #1e3443 60%, #1d3d3c 100%),
-    linear-gradient(90deg, #c1641c, transparent);
+  background-image: var(--color-auth-mobile-background);
 }
 
 .desktop-background {

@@ -1,18 +1,23 @@
 @import 'tailwindcss';
-@plugin "@tailwindcss/typography";
-@plugin "@tailwindcss/forms" {
+/* @plugin "@tailwindcss/typography"; */
+/* @plugin "@tailwindcss/forms" {
   strategy: 'class';
-}
+} */
 
 /* Instagram Clone Theme Configuration */
 @theme {
   /* === COLORES PRINCIPALES === */
+
   /* Backgrounds */
-  --color-ig-black: #000000;
+  --auth-input-bg: #1c2b33;
+  --auth-input-border: #58626c;
+  --auth-input-focus: #9eb0c2;
+
+  /* --color-ig-black: #000000;
   --color-ig-dark: #121212;
   --color-ig-surface: #262626;
   --color-ig-card: #1a1a1a;
-  --color-ig-border: #363636;
+  --color-ig-border: #363636; */
 
   /* Text Colors */
   --color-ig-text: #ffffff;
@@ -30,6 +35,14 @@
   --color-ig-warning: #ffcc02;
   --color-ig-error: #ed4956;
 
+  /* Masks */
+  --mask-eye: url('/assets/icons/eye.png');
+  --mask-hidden: url('/assets/icons/hidden.png');
+  --mask-meta: url('/assets/icons/meta.png');
+  --mask-back: url('/assets/icons/back.png');
+  --mask-close: url('/assets/icons/close.png');
+  --mask-warning: url('/assets/icons/warning.png');
+
   /* === GRADIENTES === */
   --color-ig-gradient-story: linear-gradient(
     45deg,
@@ -39,6 +52,15 @@
     #cc2366 75%,
     #bc1888 100%
   );
+
+  --color-auth-mobile-background: linear-gradient(
+    130deg,
+    #2d3736 0%,
+    #282e3e 20%,
+    #1e3443 60%,
+    #1d3d3c 100%
+  );
+
   --color-ig-gradient-live: linear-gradient(45deg, #ff006e, #8338ec);
 
   --font-family-instagram: 'Instagram Sans', system-ui, sans-serif;
@@ -53,6 +75,19 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   line-height: 1.5;
+}
+
+@layer utilities {
+  .auth-mobile-input {
+    @apply h-[62px] w-full rounded-2xl border border-solid px-4 pt-7 pb-4 font-semibold outline-none;
+
+    background-color: var(--auth-input-bg);
+    border-color: var(--auth-input-border);
+    color: var(--auth-label);
+  }
+  .auth-mobile-input:focus {
+    border-color: var(--auth-input-focus);
+  }
 }
 
 @font-face {
